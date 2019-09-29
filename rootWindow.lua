@@ -112,7 +112,7 @@ local function computeStars()
 		local points = gen2d(SW,SH,dist)
 		if #points > 5 then
 			for _,p in ipairs(points) do
-				id:setPixel(floor(p.x),floor(p.y),dim,dim,dim)
+				id:setPixel(floor(p.x),floor(p.y),dim/255,dim/255,dim/255)
 			end
 		else 
 			continue=false
@@ -236,7 +236,7 @@ end
 
 
 function mainComp:draw()
-	lg.setColor(255,255,255)
+	lg.setColor(1,1,1)
 	lg.draw(bgStars)
 	local ls = nil
 	if shaderModel.active then

@@ -132,7 +132,7 @@ local function getPlanetImages(radius,nbFrames)
 				u=u/1.75
 
 				local cr,cg,cb = colFunc(u,v)
-				id:setPixel(x+sz*iframe,y,cr *255,cg*255,cb*255,255)
+				id:setPixel(x+sz*iframe,y,cr,cg,cb,1)
 			end
 		end
 	end

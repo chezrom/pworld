@@ -1,7 +1,7 @@
 function love.conf(t)
     t.title             = "Parallel worlds 1.0"
     t.author            = "chezrom"
-    t.version           = "0.10.0"
+    t.version           = "11.2"
     t.identity          = "pworlds"
     t.window.width      = 800
     t.window.height     = 600
